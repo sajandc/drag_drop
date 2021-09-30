@@ -1,0 +1,120 @@
+.App {
+  background-color: #282c34;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  border-bottom: 1px solid white;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #282c34;
+  cursor: pointer;
+  float: right;
+  margin: 30px 30px 0px;
+  font-size: 14px;
+  &:hover {
+   box-shadow: 0px 0px 2px 2px #696969;
+  }
+}
+
+.margin-r-20 {
+  margin-right: 20px;
+}
+
+input {
+  padding: 10px;
+}
+
+.add-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.list-container {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+}
+
+.list-item {
+  width: 250px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  max-height: 500px;
+  overflow: scroll;
+  position: relative;
+  margin-right: 20px;
+  title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    background:  #282c34;
+    position: sticky;
+    top: 0px;
+  }
+  .add-sub-list {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+    position: sticky;
+    width: inherit;
+    background:  #282c34;
+    bottom: 0px;
+  }
+  .modal {
+    color: #282c34;
+  }
+  .sub-list-input {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    >span {
+      min-width: 100px;
+    }
+    textarea {
+      height: 100px;
+      width: 100%;
+      padding: 10px;
+    }
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.sub-list-container {
+  padding: 10px;
+  height: 385px;
+  .list-item {
+    width: inherit;
+    margin-bottom: 10px;
+    margin-right: unset;
+    .description {
+      padding: 10px;
+    }
+    &:hover {
+      box-shadow: 0px 0px 9px 0px #fff;
+    }
+  }
+
+}
+
+.z-index {
+  z-index: 999;
+}
